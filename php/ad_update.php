@@ -3,6 +3,14 @@
 @include 'config.php';
 
 $id = $_GET['edit'];
+session_start();
+$userprofile = $_SESSION['user_name'] ;
+if( $userprofile == true){
+
+}
+else{
+  header('location:index.php');
+}
 
 if(isset($_POST['update_product'])){
 
@@ -38,6 +46,14 @@ if(isset($_POST['update_product'])){
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <link rel="stylesheet" href="../css/admin.css">
+   
+   <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+   <!-- font awesome cdn link  -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
 </head>
 <body>
 
@@ -48,7 +64,22 @@ if(isset($_POST['update_product'])){
       }
    }
 ?>
+<header>
+      <a href="#" class="logo"><img src="../images/logo.png" alt="" /></a>
+      <a href="#" class="logoname">Friendly Cafe</a>
 
+      <!-- <div id="menu-bar" class="fas fa-hamburger"></div> -->
+
+      <nav class="navbar">
+        <!-- <section class="navlinks"> -->
+        <ul>
+          <li><a class="active" href="../index.html">home</a></li>
+          <li><a href="logout.php">
+            logout
+          </a></li>
+        </ul>
+       
+</header>
 <div class="container">
 
 

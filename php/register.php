@@ -26,3 +26,22 @@
             }
         }
     }
+
+    ?>
+    <!-- <?php
+if(!empty($_POST["submit"])) {
+	$userName = $_POST["name"];
+  $userEmail = $_POST["email"];
+	$seats = $_POST["seats"];
+	$userMessage = $_POST["instructions"];
+	$toEmail = "vizags03@gmail.com";
+  
+	$mailHeaders = "Name: " . $userName .
+	"\r\n Email: ". $userEmail  . 
+	"\r\n Seats: ". $seats  . 
+	"\r\n Message: " . $userMessage . "\r\n";
+
+    mail($toEmail,$userMessage,$mailHeaders);
+
+}
+?> -->

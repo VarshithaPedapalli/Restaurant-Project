@@ -24,10 +24,13 @@ h1, h3{
 html{
     font-size: 62.5%;
     overflow-x: hidden;
+    scroll-behavior: smooth;
+
 }
 
 body{
     overflow-x: hidden;
+    scroll-behavior: smooth;
     /* height:200rem; */
 }
 
@@ -150,6 +153,7 @@ header #menu-bar{
 .navsocial i:hover{
     font-size: 25px;
 }
+
 .home{
     display: flex;
     align-items: center;
@@ -164,9 +168,10 @@ header #menu-bar{
 .home::after{
     content:'';
     position: absolute;
-    top:5rem; right:-6rem;
-    background:var(--teal);
-    border-radius: 3rem;
+    top:5rem;
+    right:-6rem;
+    background:teal;
+    border-radius: 20px;
     transform:rotate(-45deg);
     height:40rem;
     width:70rem;
@@ -348,84 +353,6 @@ header #menu-bar{
     }
 }
 
-/* .gallery .box-container{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
-}
-
-.gallery .box-container .box{
-    height:20rem;
-    width:30rem;
-    margin:2rem;
-    cursor: pointer;
-    overflow: hidden;
-    position: relative;
-}
-
-.gallery .box-container .box img{
-    height:100%;
-    width:100%;
-    object-fit: cover;
-}
-
-
-.gallery .box-container .box:hover{
-    transform: scale(1.3);
-    z-index: 2;
-} */
-
-/* .order{
-    background:url(./images/img1.jpg) no-repeat;
-    background-size: cover;
-    background-position: center;
-
-} */
-
-/* .order .row{
-    display: flex;
-    background:#fff;
-    margin:2rem 0;
-    overflow: hidden;
-    box-shadow: 0 .5rem 1rem rgba(0,0,0,.3);
-    border-radius: 1rem;
-}
-
-.order .row .image{
-    flex:1 1 40%;
-}
-
-.order .row .image img{
-    height:100%;
-    width:100%;
-    object-fit: cover;
-}
-
-.order .row form{
-    flex:1 1 60%;
-    background:#fff;
-    padding:2rem;
-}
-
-.order .row form .box{
-    padding:1rem;
-    margin:1rem 0;
-    font-size: 1.5rem;
-    color:#333;
-    text-transform: none;
-    background:#f0f0f0;
-    width:100%;
-}
-
-.order .row form .box::placeholder{
-    text-transform: capitalize;
-}
-
-.order .row form .address{
-    resize: none;
-    height:15rem;
-} */
 .container1{
     width:100%;
     min-height: 100vh;
@@ -725,8 +652,8 @@ label{
 
 .popular .box-container .box {
     background: #fff;
-    width: 35rem;
-    padding: 2rem;
+    width: 26rem;
+    padding: 0.5rem;
     margin: 2rem;
     border-radius: 1rem;
     box-shadow: 0 .3rem .5rem rgba(0, 0, 0, .2);

@@ -130,8 +130,8 @@
       <h1 class="heading">our delicious <span>menu</span></h1>
 
       <ul class="list" data-aos="fade-down">
-        <li class="btn" data-src="./images/breakfast1.jpg">breakfast</li>
-        <li class="btn active" data-src="./images/90934370.cms">lunch</li>
+        <li class="btn" data-src="./images/breakfast1.jpg" data-src="content">breakfast</li>
+        <li class="btn active" data-src="./images/90934370.cms" data-src="content-">lunch</li>
         <li class="btn" data-src="./images/dinner.webp">dinner</li>
         <li class="btn" data-src="./images/dessert.jpg">dessert</li>
       </ul>
@@ -141,34 +141,35 @@
           <img src="./images/90934370.cms" id="menu-img" alt="" />
         </div>
 
-        <div class="content">
+        <div class="content" data-aos="fade-left" >
           <div class="info">
-            <h3><span>01.</span>south indian thali</h3>
+            <div class="info">
+              <h3><span>01.</span>sandwich.</h3>
+              <p>
+                Life is good when you have a good sandwich.
+              </p>
+            </div>
+            <h3><span>02.</span>south indian thali</h3>
             <p>
               It includes rice, dal, vegetables, roti, papad, dahi (yogurt),
               small amounts of chutney or pickle, and a sweet dish to top it
               off.
             </p>
           </div>
+         
+          
           <div class="info">
-            <h3><span>02.</span>veg biryani</h3>
-            <p>
-              This easy veg biryani is a total crowd pleaser! You will love this
-              for everything
-            </p>
-          </div>
-          <div class="info">
-            <h3><span>03.</span>dum biryani</h3>
-            <p>
-              This is a one-pot dish of aromatic spices and delightful flavours
-              only for you.
-            </p>
-          </div>
-          <div class="info">
-            <h3><span>04.</span> butter naan</h3>
+            <h3><span>03.</span> butter naan</h3>
             <p>The most soft and fluffy naan topped with butter</p>
           </div>
+
+         <div class="info">
+          <h3><span>04.</span>Chocolate smoothies </h3>
+          <p>
+            Chocolate smoothies are a delicious treat for all ages.
+          </p>
         </div>
+      </div>
       </div>
     </section>
 
@@ -280,9 +281,16 @@
 
       <div class="row">
         <form class="form" action="./php/register.php" data-aos="fade-right">
-          <div class="error"></div>
+          <div class="error" style="color: #af4242;
+          background-color: #fde8ec;
+          padding: 10px;
+          transform: translateY(-20px);
+          margin-bottom: 20px;
+          font-size: 18px;
+          display: none;
+          margin-top: 20px;"></div>
           <label class="required">Name</label>
-          <input type="text" placeholder="e.g John" class="box" name="name" />
+          <input type="text" placeholder="e.g John" class="box" name="name" />         
           <label class="required">Email</label>
           <input type="email" placeholder="e.g John123@gmail.com" class="box" name="email" />
           <label class="required">No Of Seats</label>

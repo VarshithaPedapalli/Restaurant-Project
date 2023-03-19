@@ -16,27 +16,6 @@
 
   </head>
   <body>
-
-  <!-- <header> 
-      <a href="#" class="logo"
-        ><img src="../images/logo.png" alt="">Friendly Cafe</a
-      >
-
-      <div id="menu-bar" class="fas fa-hamburger"></div>
-
-      <nav class="navbar">
-        <ul>
-          <li><a class="active" href="#home">home</a></li>
-          <li><a href="#about">about</a></li>
-          <li><a href="#menu">menu</a></li>
-          <li><a href="#popular">popular</a></li>
-          <li><a href="#gallery">gallery</a></li>
-          <li>
-            <a href="#home">CALL US : <span>+91 8967453765</span></a>
-          </li>
-        </ul>
-      </nav>
-    </header> -->
     <header>
       <a href="#" class="logo"><img src="../images/logo.png" alt="" /></a>
       <a href="#" class="logoname">Friendly Cafe</a>
@@ -46,18 +25,8 @@
       <nav class="navbar">
         <!-- <section class="navlinks"> -->
         <ul>
-          <li><a class="active" href="../index.html">Home</a></li>
-          <!-- <li><a href="#about">about</a></li>
-          <li><a href="#menu">menu</a></li>
-          <li><a href="#popular">popular</a></li>
-          <li><a href="#gallery">gallery</a></li> -->
-          
+          <li><a class="active" href="../index.php">Home</a></li>
         </ul>
-        <!-- <div class="navsocial">
-        <a href="https://www.facebook.com/"><i class="bx bxl-facebook" style="color: blue"></i></a>  
-         <a href="https://www.instagram.com/"><i class="bx bxl-instagram" style="color: rgb(246, 6, 74)"></i></a> 
-         <a href="https://twitter.com/i/flow/login?input_flow_data=%7B%22requested_variant%22%3A%22eyJsYW5nIjoiZW4ifQ%3D%3D%22%7D"><i class="bx bxl-twitter" style="color: rgb(4, 165, 218)"></i></a>  -->
-        </div>
        
       </nav>
     </header>
@@ -68,11 +37,17 @@
         <form action="login.php" method="post">
           <?php if(isset($_GET['error'])) {
             ?> 
-            <p class="error"> <?php echo $_GET['error']; ?></p>
+            <p class="error" style="color: #af4242;
+          padding: 10px;
+          background-color: rgb(252, 237, 237);
+          text-align:center;
+          font-size: 18px;
+          border-radius:30px;
+          margin-bottom:20px;"> <?php echo $_GET['error']; ?></p>
         <?php  }  ?>
           <div class="control">
-            <label for="name">Name</label>
-            <input type="text" name="uname" id="name" />
+            <label for="name" >Email</label>
+            <input type="email" name="uname" id="name"/>
           </div>
           <div class="control">
             <label for="psw">Password</label>
@@ -83,9 +58,8 @@
           </div>
         </form>
         <div class="link">
-          <a href="#">Forget password ?</a> <br> <br>
-          <a href="../index.html">Home</a>
-        </div>
+          <a href="#">Forget password ?</a>
+             </div>
       </div>
     </section>
     
